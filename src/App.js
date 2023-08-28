@@ -1,11 +1,17 @@
 import React from 'react';
+import Navbar from './Navbar';
+import UserForm from './UserForm';
 
-const App = () => {
+function App() {
     return (
         <div>
-          Hello React!  
+            <Navbar />
+            <div style={{ padding: '2rem' }}>
+                <h1>Fill in the form:</h1>
+                <UserForm />
+            </div>
         </div>
     );
-};
+}
 
 export default App;
